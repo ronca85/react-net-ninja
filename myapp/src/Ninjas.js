@@ -1,26 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Ninjas extends Component {
-	render() {
-		// the line below creates three variables and stores corresponding props under them
-		const { ninjas } = this.props;
+// in class based components props are automatically attached to the instance of the component and we use this.props to access them
+// in function based components we pass props as a parameter and we don't use this.props
 
-		const ninjaList = ninjas.map(ninja => {
-			return (
-				<div className="ninja" key={ ninja.id }>
-					<div>Name: { ninja.name }</div>
-					<div>Age: { ninja.age }</div>
-					<div>Belt: { ninja.belt }</div>
-				</div>
-			)
-		});
+// const Ninjas = (props) => {
+//	const { ninjas } = props; // this works but we can write it differently
 
+const Ninjas = ({ ninjas }) => { // we can stack multiple props in here, e.g. { ninjas, locations }
+
+	const ninjaList = ninjas.map(ninja => {
 		return (
-			<div className="ninja-list">
-				{ ninjaList }
+			<div className="ninja" key={ ninja.id }>
+				<div>Name: { ninja.name }</div>
+				<div>Age: { ninja.age }</div>
+				<div>Belt: { ninja.belt }</div>
 			</div>
 		)
-	}
+	});
+
+	return (
+		<div className="ninja-list">
+			{ ninjaList }
+		</div>
+	)
 }
 
 export default Ninjas;
