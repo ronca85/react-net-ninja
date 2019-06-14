@@ -16,7 +16,8 @@ class AddNinja extends Component {
 
 	handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(this.state);
+		// console.log( this.state );
+		this.props.addNewNinjaProp( this.state ); // state changes and gets exported to the App component as a prop
 	}
 
 	render() {
