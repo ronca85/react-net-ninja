@@ -14,7 +14,7 @@ class App extends Component {
 
 	addNewNinja = (newNinja) => {
 		// console.log( newNinja ); // newNinja is the state that was imported from the AddNinja component
-		newNinja.id = Math.random(); // gives the same id for every new ninja LOL
+		newNinja.id = Math.random();
 		let ninjasCopy = [...this.state.ninjas, newNinja]; // "spreads" (...) the ninjas by taking all of its elements and the brackets [] are creating a new array, effectively copying the original array. we have to do this and create a copy of an array this way every time we need to manipulate an array in order not to corrupt the original array.
 		console.log( this.state.ninjas );
 		this.setState({
@@ -37,7 +37,7 @@ class App extends Component {
 			<div className="App">
 				<h1>My first react app</h1>
 				<p>Welcome :)</p>
-				<Ninjas deleteNinja={this.deleteNinja} ninjas={ this.state.ninjas } />
+				<Ninjas deleteNinja={ this.deleteNinja } ninjas={ this.state.ninjas } />
 				<AddNinja addNewNinjaProp={ this.addNewNinja } />
 			</div>
 		);

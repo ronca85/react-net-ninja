@@ -22,22 +22,12 @@ class App extends Component {
 		})
 	}
 
-	deleteNinja = (id) => {
-		// console.log( id );
-		let ninjasFilteredArray = this.state.ninjas.filter(ninja => { // filter is a non-destructive method of "deleting" ninjas from the array
-			return ninja.id !== id; // if ids are the same, filter it out. if not, get into the new array
-		});
-		this.setState({
-			ninjas: ninjasFilteredArray
-		})
-	}
-
 	render() {
 		return (
 			<div className="App">
 				<h1>My first react app</h1>
 				<p>Welcome :)</p>
-				<Ninjas deleteNinja={this.deleteNinja} ninjas={ this.state.ninjas } />
+				<Ninjas ninjas={ this.state.ninjas } />
 				<AddNinja addNewNinjaProp={ this.addNewNinja } />
 			</div>
 		);
