@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.3d7f2999.chunk.css",
-  "main.js": "/static/js/main.208217ed.chunk.js",
-  "main.js.map": "/static/js/main.208217ed.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.eaab5179.chunk.js": "/static/js/2.eaab5179.chunk.js",
-  "static/js/2.eaab5179.chunk.js.map": "/static/js/2.eaab5179.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.cc78ef3d1021959a2f882796264c090b.js": "/precache-manifest.cc78ef3d1021959a2f882796264c090b.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.3d7f2999.chunk.css.map": "/static/css/main.3d7f2999.chunk.css.map",
-  "static/media/pokeball.png": "/static/media/pokeball.f10bf078.png"
+  "main.css": "./static/css/main.3d7f2999.chunk.css",
+  "main.js": "./static/js/main.208217ed.chunk.js",
+  "main.js.map": "./static/js/main.208217ed.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "./static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.eaab5179.chunk.js": "./static/js/2.eaab5179.chunk.js",
+  "static/js/2.eaab5179.chunk.js.map": "./static/js/2.eaab5179.chunk.js.map",
+  "index.html": "./index.html",
+  "precache-manifest.cc78ef3d1021959a2f882796264c090b.js": "./precache-manifest.cc78ef3d1021959a2f882796264c090b.js",
+  "service-worker.js": "./service-worker.js",
+  "static/css/main.3d7f2999.chunk.css.map": "./static/css/main.3d7f2999.chunk.css.map",
+  "static/media/pokeball.png": "./static/media/pokeball.f10bf078.png"
 }
